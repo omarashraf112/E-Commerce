@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="site82207" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\KimoStore\\Desktop\\Projects\\New\ folder\\Final\ E-Commerce\\Final_Ecommerce\\Final_Ecommerce\\obj\\Release\\net10\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>
