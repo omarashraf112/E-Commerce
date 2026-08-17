@@ -1,0 +1,126 @@
+.cat-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-card);
+  transition: all var(--dur-normal) var(--ease-smooth);
+  text-decoration: none;
+}
+
+.cat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--border-medium);
+}
+
+.cat-card-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--bg-muted);
+}
+
+.cat-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 600ms var(--ease-smooth);
+}
+
+.cat-card:hover .cat-card-media img {
+  transform: scale(1.08);
+}
+
+.cat-card-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.05) 0%, rgba(15, 23, 42, 0.65) 100%);
+}
+
+.cat-card-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--bg-glass-dark);
+  backdrop-filter: blur(8px);
+  color: var(--text-inverse);
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.cat-card-content {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cat-card-meta {
+  margin-bottom: 4px;
+}
+
+.cat-card-count {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--brand);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cat-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 6px;
+  transition: color var(--dur-fast) var(--ease-smooth);
+}
+
+.cat-card:hover .cat-card-title {
+  color: var(--brand);
+}
+
+.cat-card-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cat-card-action {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-main);
+  transition: gap var(--dur-fast) var(--ease-smooth);
+}
+
+.cat-card:hover .cat-card-action {
+  color: var(--brand);
+  gap: 9px;
+}
+
+.cat-card-arrow {
+  color: var(--brand);
+  transition: transform var(--dur-fast) var(--ease-smooth);
+}
+
+.cat-card:hover .cat-card-arrow {
+  transform: translateX(3px);
+}

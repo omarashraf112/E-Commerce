@@ -1,0 +1,72 @@
+.qty-selector {
+  display: inline-flex;
+  align-items: center;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-pill);
+  background: var(--bg-card);
+  overflow: hidden;
+  height: 42px;
+  box-shadow: var(--shadow-xs);
+  transition: border-color var(--dur-fast) var(--ease-smooth);
+}
+
+.qty-selector:hover:not(.qty-disabled) {
+  border-color: var(--border-medium);
+}
+
+.qty-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 100%;
+  color: var(--text-secondary);
+  background: transparent;
+  transition: all var(--dur-fast) var(--ease-smooth);
+}
+
+.qty-btn:hover:not(:disabled) {
+  background: var(--bg-muted);
+  color: var(--text-main);
+}
+
+.qty-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.qty-value {
+  min-width: 28px;
+  text-align: center;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--text-main);
+  user-select: none;
+}
+
+.qty-sm {
+  height: 32px;
+}
+.qty-sm .qty-btn {
+  width: 28px;
+}
+.qty-sm .qty-value {
+  font-size: 12px;
+  min-width: 22px;
+}
+
+.qty-lg {
+  height: 48px;
+}
+.qty-lg .qty-btn {
+  width: 44px;
+}
+.qty-lg .qty-value {
+  font-size: 15px;
+  min-width: 32px;
+}
+
+.qty-disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}

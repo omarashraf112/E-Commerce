@@ -1,0 +1,348 @@
+.orders-page {
+  padding: 36px 20px 70px;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.orders-header {
+  margin-bottom: 28px;
+}
+
+.orders-title {
+  font-size: clamp(24px, 3.5vw, 34px);
+  margin-bottom: 4px;
+}
+
+.orders-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.order-card {
+  padding: 22px 26px;
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.order-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.order-meta-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.order-id {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-main);
+}
+
+.order-date {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+/* Status Pill */
+.status-pill {
+  font-family: var(--font-heading);
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  text-transform: capitalize;
+}
+
+.status-delivered {
+  background: var(--emerald-light);
+  color: var(--emerald);
+}
+
+.status-processing,
+.status-pending {
+  background: var(--brand-light);
+  color: var(--brand-deep);
+}
+
+.status-shipped {
+  background: var(--indigo-light);
+  color: var(--indigo);
+}
+
+.status-cancelled {
+  background: var(--coral-light);
+  color: var(--coral);
+}
+
+.order-card-body {
+  display: flex;
+  gap: 36px;
+}
+
+.order-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.order-info-label {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.order-total-price {
+  font-size: 18px;
+  color: var(--text-main);
+}
+
+.order-info-val {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+}
+
+.order-card-foot {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.order-details-btn {
+  font-size: 12.5px;
+  padding: 8px 16px;
+}
+
+/* ---- Order Detail Page ---- */
+.order-detail-page {
+  padding: 36px 20px 70px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.order-detail-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--brand);
+  margin-bottom: 20px;
+}
+.order-detail-back:hover {
+  text-decoration: underline;
+}
+
+.order-detail-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.order-detail-title {
+  font-size: 28px;
+  margin: 4px 0 2px;
+}
+
+.order-detail-date {
+  font-size: 13.5px;
+  color: var(--text-muted);
+}
+
+/* Tracking Stepper */
+.order-stepper-card {
+  padding: 28px 32px;
+  margin-bottom: 28px;
+  border-radius: var(--radius-xl);
+  background: var(--bg-card);
+}
+
+.stepper-track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.stepper-track::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 30px;
+  right: 30px;
+  height: 2px;
+  background: var(--border-medium);
+  z-index: 1;
+}
+
+.stepper-step {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.step-node {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 2px solid var(--border-medium);
+  color: var(--text-muted);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--dur-normal) var(--ease-smooth);
+}
+
+.step-title {
+  font-family: var(--font-heading);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.step-completed .step-node {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(13, 148, 136, 0.4);
+}
+.step-completed .step-title {
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.step-current .step-node {
+  border-color: var(--brand);
+  color: var(--brand);
+  box-shadow: 0 0 0 4px var(--brand-light);
+}
+
+/* Detail Grid */
+.order-detail-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.order-items-card {
+  padding: 24px;
+  border-radius: var(--radius-xl);
+}
+
+.order-items-card h3 {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.order-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-item-name {
+  font-size: 14px;
+  color: var(--text-main);
+  display: block;
+}
+
+.order-item-meta {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.order-item-subtotal {
+  font-weight: 700;
+  font-size: 14.5px;
+  color: var(--text-main);
+}
+
+.order-total-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13.5px;
+}
+
+.order-total-row {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-secondary);
+}
+
+.grand-total-row {
+  margin-top: 6px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-subtle);
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.grand-total-amount {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+/* Shipping Card */
+.order-shipping-info {
+  padding: 22px;
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.order-shipping-info h3 {
+  font-size: 15.5px;
+}
+
+.order-address-text {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.order-delivery-guarantee {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--brand);
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .order-detail-grid { grid-template-columns: 1fr; }
+  .stepper-track { overflow-x: auto; padding: 10px 0; }
+}
